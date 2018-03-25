@@ -41,4 +41,4 @@ class TestSmashingMagazineSpider:
         scrapy_response = HtmlResponse(body=response.content, url=url)
         posts_gen = spider.parse_posts_page(scrapy_response)
         posts = list(posts_gen)
-        assert len(posts) == 1
+        assert len(posts) == 2
