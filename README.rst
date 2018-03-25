@@ -3,7 +3,6 @@ Smashing Wallpaper Downloader
 =============================
 
 
-=======
 CLI утилита, основанная на Scrapy, для загрузки обоев с сайта www.smashingmagazine.com
 
 
@@ -15,12 +14,14 @@ CLI утилита, основанная на Scrapy, для загрузки о
 Предполагается, что все манипуляции проводятся в virtualenv
 
 .. code-block:: bash
+
    virtualenv -p $(which python3.6) .venv
    source .venv/bin/activate
 
 Получение репозитория и установка в virtualenv:
 
 .. code-block:: bash
+
    git clone https://github.com/aezhov/sw_downloader.git .
    cd sw_downloader
    pip install .
@@ -29,6 +30,7 @@ CLI утилита, основанная на Scrapy, для загрузки о
 теперь можно запустить тесты
 
 .. code-block:: bash
+
    python setup.py test
 
 
