@@ -22,7 +22,7 @@ CLI утилита, основанная на Scrapy, для загрузки о
 
 .. code-block:: bash
 
-   git clone https://github.com/aezhov/sw_downloader.git .
+   git clone https://github.com/aezhov/sw_downloader.git 
    cd sw_downloader
    pip install .
 
