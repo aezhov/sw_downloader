@@ -50,8 +50,7 @@ CLI утилита, основанная на Scrapy, для загрузки о
 Описание реализации
 -------------------
 
-Утилита сделана на основе фреймворка Scrapy_
-.. _Scrapy: https://scrapy.org/
+Утилита сделана на основе фреймворка `Scrapy <https://scrapy.org/>`_
 
-Логика выборки элементов задана в классе SmashingMagazineSpider_
-.. SmashingMagazineSpider_:https://github.com/aezhov/sw_downloader/blob/master/sw_downloader/sw_downloader/spiders/smashing_magazine.py
+Логика выборки элементов задана в классе `SmashingMagazineSpider <https://github.com/aezhov/sw_downloader/blob/master/sw_downloader/sw_downloader/spiders/smashing_magazine.py>`_
+
