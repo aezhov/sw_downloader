@@ -1,5 +1,5 @@
 import requests
-
+ 
 from scrapy.http import HtmlResponse
 from sw_downloader.sw_downloader.spiders.smashing_magazine \
     import SmashingMagazineSpider
@@ -30,8 +30,8 @@ class TestSmashingMagazineSpider:
         items = list(items_gen)
         assert len(items) == 26
         for item in items:
-            assert '1024x768.jpg' in item['image_urls'][0] or \
-                   '1024x768.png' in item['image_urls'][0]
+            assert '1024x768.jpg' in item['file_urls'][0] or \
+                   '1024x768.png' in item['file_urls'][0]
 
     def test_extract_posts(self):
         url = ('https://www.smashingmagazine.com/category/wallpapers')

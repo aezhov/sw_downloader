@@ -35,7 +35,9 @@ class SmashingMagazineSpider(CrawlSpider):
         for link in links:
             if self.resolution in link and\
                ('.png' in link or '.jpg' in link):
-                yield {'image_urls': [link]}
+                yield {'file_urls': [link],
+                       'month': self.month,
+                       'year': self.year}
 
     def parse_posts_page(self, response):
         posts = response.css('.article--post,.tilted-featured-article')
