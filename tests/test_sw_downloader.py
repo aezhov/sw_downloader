@@ -31,8 +31,10 @@ def test_command_line_interface():
     """Test the CLI."""
     runner = CliRunner()
     result = runner.invoke(cli.main)
+    assert result.exit_code == 2
+    result = runner.invoke(cli.main,['--resolution',' x21'])
+    assert result.exit_code == 2
+    result = runner.invoke(cli.main,['--resolution','1024x768'])
     assert result.exit_code == 0
-    assert 'sw_downloader.cli.main' in result.output
     help_result = runner.invoke(cli.main, ['--help'])
     assert help_result.exit_code == 0
-    assert '--help  Show this message and exit.' in help_result.output
