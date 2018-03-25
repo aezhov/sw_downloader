@@ -40,7 +40,7 @@ CLI утилита, основанная на Scrapy, для загрузки о
 
 .. code-block:: bash
 
-   sw-downloader --year 2018 --month 2 --resolution=1024x768
+   sw-downloader --year 2018 --month 2 --resolution 1024x768
    
 Собранные обои будут в каталоге "2018-February-1024x768".
 
