@@ -36,9 +36,22 @@ CLI утилита, основанная на Scrapy, для загрузки о
 
 Запуск
 ------
-* запуск утилиты
-* запуск тестов
+пример запуска утилиты
+.. code-block:: bash
+
+   sw-downloader --year 2018 --month 2 --resolution=1024x768
+   
+Собранные обои будут в каталоге "2018-February-1024x768".
+
+Параметры --year и --month можно опустить, вместо них будет взят 
+текущий месяц и год соответвенно.
+
 
 Описание реализации
 -------------------
 
+Утилита сделана на основе фреймворка Scrapy_
+.. _Scrapy: https://scrapy.org/
+
+Логика выборки элементов задана в классе SmashingMagazineSpider_
+.. SmashingMagazineSpider_:https://github.com/aezhov/sw_downloader/blob/master/sw_downloader/sw_downloader/spiders/smashing_magazine.py
