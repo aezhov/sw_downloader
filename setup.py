@@ -39,7 +39,13 @@ setup(
     include_package_data=True,
     keywords='sw_downloader',
     name='sw_downloader',
-    packages=find_packages(include=['sw_downloader']),
+    package_dir = { 'sw_downloader': 'sw_downloader',
+                    'sw_downloader.sw_downloader': 
+                        'sw_downloader/sw_downloader',
+                    'sw_downloader.sw_downloader.spiders': 
+                        'sw_downloader/sw_downloader/spiders'},
+    packages=['sw_downloader', 'sw_downloader.sw_downloader', 
+              'sw_downloader.sw_downloader.spiders'],
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
