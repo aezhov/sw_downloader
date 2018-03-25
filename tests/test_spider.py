@@ -1,5 +1,5 @@
 import requests
- 
+
 from scrapy.http import HtmlResponse
 from sw_downloader.sw_downloader.spiders.smashing_magazine \
     import SmashingMagazineSpider

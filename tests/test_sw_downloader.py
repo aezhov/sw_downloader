@@ -7,7 +7,6 @@ import pytest
 
 from click.testing import CliRunner
 
-from sw_downloader import sw_downloader
 from sw_downloader import cli
 
 
@@ -32,9 +31,9 @@ def test_command_line_interface():
     runner = CliRunner()
     result = runner.invoke(cli.main)
     assert result.exit_code == 2
-    result = runner.invoke(cli.main,['--resolution',' x21'])
+    result = runner.invoke(cli.main, ['--resolution', ' x21'])
     assert result.exit_code == 2
-    result = runner.invoke(cli.main,['--resolution','1024x768'])
+    result = runner.invoke(cli.main, ['--resolution', '1024x768'])
     assert result.exit_code == 0
     help_result = runner.invoke(cli.main, ['--help'])
     assert help_result.exit_code == 0
