@@ -3,6 +3,7 @@ Smashing Wallpaper Downloader
 =============================
 
 
+=======
 CLI утилита, основанная на Scrapy, для загрузки обоев с сайта www.smashingmagazine.com
 
 
